@@ -129,7 +129,6 @@ namespace sero::core::utils {
         RIGHT_ALT,
         RIGHT_SUPER,
         MENU,
-        MAX = MENU
     };
 } // namespace sero::core::utils
 
