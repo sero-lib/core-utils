@@ -1,7 +1,5 @@
 #!/bin/sh
 
-pacman --noconfirm -Syu
-
 export CCACHE_PATH="/opt/.ccache"
 
 cd /opt/repo || exit 1

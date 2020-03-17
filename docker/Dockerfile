@@ -13,7 +13,8 @@ RUN pacman --noconfirm --needed -S \
         clang \
         cmake \
         git \
-        gtest
+        gtest \
+        ninja
 
 # Copy over the file
 COPY compile_and_run.sh /compile_and_run.sh
