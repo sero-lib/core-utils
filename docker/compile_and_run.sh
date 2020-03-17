@@ -8,8 +8,8 @@ cd /opt/repo || exit 1
 
 mkdir build && cd build || exit 1
 cmake .. \
-    -DCMAKE_CXX_COMPILER=/bin/g++ \
-    -DCMAKE_CC_COMPILER=/bin/gcc \
+    -DCMAKE_CXX_COMPILER=/bin/clang++ \
+    -DCMAKE_CC_COMPILER=/bin/clang \
     -GNinja
 cmake --build .
 
