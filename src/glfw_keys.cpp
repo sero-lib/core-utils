@@ -253,11 +253,5 @@ namespace sero::core::utils {
             default:
                 return std::nullopt;
         }
-        // glfw unknown
-        if (value == -1) {
-            return std::nullopt;
-        }
-
-
     }
 } // namespace sero::core::utils
