@@ -3,6 +3,7 @@
 //
 
 #include <core-utils/keys.hpp>
+#include <core-utils/glfw_keys.hpp>
 
 #include <gtest/gtest.h>
 
