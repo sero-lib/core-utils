@@ -17,7 +17,7 @@ notifications:
 
 script:
   # pass variables TRAVIS_BRANCH and repo to entry-point
-  - docker run -v /home/travis/build/sero-lib/core-utils:/opt/repo -v ~/.ccache:/opt/.ccache yuhanuncitgez/sero_core_util:latest
+  - docker run -v /home/travis/build/sero-lib/core-utils:/opt/repo -v ~/.ccache:/opt/.ccache yuhanuncitgez/sero_core_utils:latest
 
 cache:
   directories:
