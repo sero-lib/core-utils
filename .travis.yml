@@ -11,18 +11,13 @@ services:
 git:
   depth: false
 
-# This happens before your build
-before_install:
-  # Pull the docker image, not cached, caching is slower
-  - docker pull yuhanuncitgez/sero_core_utils:latest
-
 # Notifications, no email
 notifications:
   email: false
 
 script:
   # pass variables TRAVIS_BRANCH and repo to entry-point
-  - docker run -v /home/travis/build/sero-lib/core-utils:/opt/repo -v ~/.ccache:/opt/.ccache yuhanuncitgez/sero_core_opengl:latest
+  - docker run -v /home/travis/build/sero-lib/core-utils:/opt/repo -v ~/.ccache:/opt/.ccache yuhanuncitgez/sero_core_util:latest
 
 cache:
   directories:

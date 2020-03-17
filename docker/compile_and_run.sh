@@ -2,6 +2,8 @@
 
 pacman --noconfirm -Syu
 
+export CCACHE_PATH="/opt/.ccache"
+
 cd /opt/repo || exit 1
 git pull
 git submodule foreach git pull
