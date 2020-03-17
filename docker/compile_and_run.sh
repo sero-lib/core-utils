@@ -5,8 +5,6 @@ export CC=/lib/ccache/bin/clang
 export CXX=/lib/ccache/bin/clang++
 
 cd /opt/repo || exit 1
-git pull
-git submodule foreach git pull
 
 mkdir build && cd build || exit 1
 cmake .. \
