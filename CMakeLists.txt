@@ -3,12 +3,18 @@ project(sero_core)
 
 set(CMAKE_CXX_STANDARD 20)
 
+
+enable_testing()
+
+add_subdirectory(external/googletest)
+
 add_library(sero_core_utils
         src/glfw_keys.cpp
         )
 
 target_include_directories(sero_core_utils
         PUBLIC include
+        ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR}
         )
 
 add_executable(sero_core_utils_tests
