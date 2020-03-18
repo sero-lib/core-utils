@@ -9,7 +9,7 @@
 #include <optional>
 
 namespace sero::core::utils {
-    constexpr std::optional<Keys> glfw_key_to_sero(int value) noexcept;
+    [[nodiscard]] std::optional<Keys> glfw_key_to_sero(int value) noexcept;
 } // namespace sero::core::utils
 
 #endif //SERO_GLFW_KEYS_HPP

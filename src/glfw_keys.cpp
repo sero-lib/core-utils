@@ -6,7 +6,7 @@
 #include "core-utils/glfw_keys.hpp"
 
 namespace sero::core::utils {
-    constexpr std::optional<Keys> glfw_key_to_sero(int value) noexcept {
+    std::optional<Keys> glfw_key_to_sero(int value) noexcept {
         // forgive me
         // https://www.glfw.org/docs/3.3/group__keys.html#ga99aacc875b6b27a072552631e13775c7
         switch (value) {
